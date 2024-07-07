@@ -22,16 +22,32 @@ We are developing a self-driving autonomous car using advanced artificial intell
 
 ## Hardware Prototype
 
-We have also developed a hardware prototype using Arduino C, servo motors, ultrasonic sensors, and Bluetooth module (HC-05). The prototype features:
+We have also developed a hardware prototype using Arduino C, servo motors, ultrasonic sensors, and a Bluetooth module (HC-05). The prototype features:
 
-- **Obstacle Avoidance**: Autonomous navigation around obstacles.
-- **Bluetooth Control**: Manual control for testing and development purposes.
+- **Obstacle Avoidance**: 
+  - **Functionality**: Autonomous navigation around obstacles using ultrasonic sensors to measure distances and make decisions.
+  - **Details**: The car measures distances to obstacles and navigates around them autonomously. If an obstacle is detected within a certain range, the car stops and decides the best direction to avoid it.
+  
+- **Bluetooth Control**: 
+  - **Functionality**: Manual control of the car via Bluetooth for testing and development purposes.
+  - **Details**: Allows manual control of the car using Bluetooth commands (e.g., forward, backward, left, right, stop). This feature is especially useful during the testing and development phases.
+
+- **Voice Control**: 
+  - **Functionality**: Voice commands to control the car's movements.
+  - **Details**: Enables control of the car using voice commands. The car responds to commands for moving forward, backward, left, right, and stopping.
+  
+- **Ultrasonic Sensing**: 
+  - **Functionality**: Measures distances to obstacles and adjusts movements accordingly.
+  - **Details**: Uses an ultrasonic sensor to measure distances to obstacles. The sensor helps in determining the best path when an obstacle is detected on either side of the car.
 
 ## Presentation
 
 For an overview and detailed explanation of our project, please refer to our presentation:
 
 - [Autonomy Mobility Fusion Presentation](https://drive.google.com/file/u/4/d/1Lekqfe0vgKUBpHBO0uA8bYuV-UjQzoSc/view?usp=drive_web)
+
+The presentation includes run and test case videos for each simulation and the hardware prototype, demonstrating the functionality and performance of our autonomous car in various scenarios.
+
 
 ## Conclusion
 
